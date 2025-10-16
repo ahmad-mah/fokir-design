@@ -1,10 +1,13 @@
 nav {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 12px 0;
-  position: sticky;
   background-color: transparent;
 }
 nav span {
@@ -20,7 +23,7 @@ nav ul {
 nav ul a {
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: white;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
