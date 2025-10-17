@@ -8,6 +8,7 @@
 :root {
   --primary-color: #f2495b;
   --white-color: #fff;
+  --border-black-color: rgb(85, 85, 85);
   --font-family-roboto: "Roboto", sans-serif;
   --font-family-source-sans: "Source Sans 3", sans-serif;
 }
@@ -21,11 +22,14 @@ h2,
 h3,
 h4,
 h5,
-h6,
-span {
+h6 {
   font-family: var(--font-family-source-sans);
 }
 
 .container {
-  width: 80%;
+  width: 60%;
+  margin: 0 auto;
+}
+img {
+  display: block;
 }
