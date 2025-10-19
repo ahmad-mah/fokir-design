@@ -1,0 +1,82 @@
+.testimonial {
+  padding: 100px 0;
+}
+
+.testimonial .container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+
+.card {
+  position: relative;
+  padding: 40px 0;
+
+  background-color: rgb(241, 241, 241);
+
+  border-radius: 5px;
+  display: flex;
+  column-gap: 50px;
+  align-items: stretch;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  background: var(--primary-color);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+
+.card__img {
+  position: relative;
+  z-index: 1;
+  height: 110px;
+  width: 110px;
+
+  background-image: url(../images/feedback.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  flex: 6;
+}
+.card__content h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+}
+
+.card__content__Location span {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(102, 102, 102);
+}
+.card__content__Location i {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+}
+.card__content p {
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(85, 85, 85);
+  line-height: 25px;
+  font-weight: 400;
+}
+.card__rating i {
+  color: gold;
+  font-size: 18px;
+}
